@@ -1,0 +1,20 @@
+{
+    "name": "imasznet/composer",
+    "description": "Example project of PHP application made using Composer. PHP application file organization and example usage of Composer dependencies.",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "classmap":["classes/", "library/"],
+        "files":["config/database.php"],
+        "psr-4": {
+            "App\\":"src/",
+            "AppModels\\":"src/model/"
+        }
+    },
+    "require-dev": {
+        "filp/whoops": "^2.15"
+    },
+    "require": {
+        "nesbot/carbon": "^2.70"
+    }
+}
